@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naheesdo</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage() {
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileing").value; // url *link to your image*        
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+                <img src="https://i.pinimg.com/564x/e3/8a/33/e38a333fd459af0b9268c89ac216549d.jpg" alt="" class="imgpro">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://youtu.be/dS18fuAzPuk?si=2THOxJap0_Gv2zaI" class="on-hover">
+                <p style="font-size: x-large; font-weight: 600;" id="username-p">Nena's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label>Username</label style="font-weight: 400;"><input style="margin-left: 10px;" type="text"
+                    id="username"><button id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label>Profile</label style="font-weight: 400;"><input style="margin-left: 10px;" type="text"
+                    id="profileing"><button id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"><img src="https://i.pinimg.com/564x/e3/8a/33/e38a333fd459af0b9268c89ac216549d.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/46/a0/b5/46a0b59b78850d09fab1ce66f7d12299.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/96/62/d2/9662d28049e5d3e1cd1300785daeaa2b.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://play-lh.googleusercontent.com/SeDXdsHHRuMmrzOJQxLwngKB65h-iYQYjuO9bhlWp82Evyn_xxaYeiEtYwakXrhO1oY" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/33/7e/d3/337ed313e42569dcd7bfe590503fc098.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/2c/de/d9/2cded9bdd3188d4c69a786a5ae971928.jpg" alt="" class="img"></div>
+            <div class="gallery-item row-span"><img src="https://i.pinimg.com/564x/40/03/6e/40036e56c1ae22b90027d2884df060e8.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/52/15/97/52159715b56f4edfc1cfdeb4efdef418.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/58/e3/75/58e375b2444cba6ef5cbcb998289bf05.jpg" alt="" class="img" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/dd/0b/dd/dd0bdd8cd6c305097694d7c572d8a7b1.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/eb/c3/2c/ebc32c61284ffdf214715655073cf6d6.jpg" alt="" class="img"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/564x/c2/e9/2e/c2e92e60aa0c1ee5aa58408b981f048f.jpg" alt="" class="img"></div>
+        </div>
+    </div>
+</body>
+
+</html>
